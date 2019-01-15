@@ -1,0 +1,7 @@
+server:
+  image: hfreire/make-porto-win-european-best-destination-2017:latest
+  restart: always
+  environment:
+    PROXY: tor-lb:44438
+  links:
+    - tor-lb:tor-lb.tor
